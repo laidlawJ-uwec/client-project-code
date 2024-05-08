@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    background-color: #F5F5F5;
+    font-family: 'Roboto';
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    background-color: #E22B2B;
+    padding: 20px;
+    width: 10vw;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+h2 {
+    color: #E22B2B;
+    font-weight: normal;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding-bottom: 25px;
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*applies to the divs within the container div, 
+not the container div itself*/
+#container div {
+    background-color: white;
+    display: inline-block;
+    width: 40vw;
+}
+
+#cart {
+    background-color: #3C78D8;
+    padding: 10px;
+}
+
+#buy {
+    background-color: #3CF037;
+    padding: 10px;
+}
+
+@media (max-width: 1000px) {
+    #container div {
+
+    }
+
+    nav a {
+        
+    }
+}
