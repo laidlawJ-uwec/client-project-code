@@ -7,19 +7,25 @@
     <link rel="stylesheet" href="styles.css">
     <title>Electron Emproium</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="images/site.webmanifest">
-    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="manifest" href="site.webmanifest">
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="images/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
     <header>
-        <a href="index.html"></a>
+        <a href="index.html"><img src="images/coloredEELogo.png" alt="Electron Emporium Logo"></a>
+
+        <h1>Electron Emporium</h1>
 
         <nav>
             <a href="aboutUs.html">About Us</a>
@@ -29,12 +35,26 @@
         </nav>
     </header>
     <main>
-        
-    </main>
+        <div id="container">
+            <div>
+                <h2>Submit a Repair Request</h2>
+                <form class="repairForm">
+                    <label for="userRequest">Your request:</label><br>
+                    <input type="text" id="userRequest" name="userRequest"><br>
+                </form>
+                <a class="search">Submit</a>
+            </div>
 
-    <footer id="contact">
-        
-    </footer>
+            <div>
+                <h2>Track Your Order</h2>
+                <form class="trackingForm">
+                    <label for="orderNum">Your order number:</label><br>
+                    <input contenteditable="true" type="text" id="orderNum" name="orderNum"><br>
+                </form>
+                <a class="search">Submit</a>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>

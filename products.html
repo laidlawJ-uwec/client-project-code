@@ -23,7 +23,7 @@
 
 <body>
     <header>
-        <a href="index.html"><img src="images/Colored EE Logo.png" alt="Electron Emporium Logo"></a>
+        <a href="index.html"><img src="images/coloredEELogo.png" alt="Electron Emporium Logo"></a>
 
         <h1>Electron Emporium</h1>
 
@@ -39,26 +39,33 @@
             <div>
                 <h2>Popular Items</h2>
                 <ul>
-                    <li>Battery terminals: $5-$10<img src="images/battery-terminal.PNG" alt="A battery terminal"></li>
-                    <li><a id="cart">Add to cart</a> <a id="buy">Buy now</a></li>
+                    <li>Battery terminals: $10<img src="images/battery-terminal.PNG" alt="A battery terminal"></li>
+                    <li><a class="cart">Add to cart</a> <a class="buy">Buy now</a></li>
 
-                    <li>Cable wires: $10-$25<img src="images/cable-wire.jpg" alt="A cable wire"></li>
-                    <li><a id="cart">Add to cart</a> <a id="buy">Buy now</a></li>
+                    <li>Cable wires: $25<img src="images/cable-wire.jpg" alt="A cable wire"></li>
+                    <li><a class="cart">Add to cart</a> <a class="buy">Buy now</a></li>
 
-                    <li>Circular connectors: $5-$10<img src="images/circular-connector.PNG" alt="A circular connector">
+                    <li>Circular connectors: $10<img src="images/circular-connector.PNG" alt="A circular connector">
                     </li>
-                    <li><a id="cart">Add to cart</a> <a id="buy">Buy now</a></li>
+                    <li><a class="cart">Add to cart</a> <a class="buy">Buy now</a></li>
 
-                    <li>Ethernet cables: $15-$25<img src="images/ethernet-cable.PNG" alt="An ethernet cable"></li>
-                    <li><a id="cart">Add to cart</a> <a id="buy">Buy now</a></li>
+                    <li>Ethernet cables: $25<img src="images/ethernet-cable.PNG" alt="An ethernet cable"></li>
+                    <li><a class="cart">Add to cart</a> <a class="buy">Buy now</a></li>
                 </ul>
             </div>
 
             <div>
                 <h2>Browse by Category</h2>
-                <ul class="category">
-                    <li></li>
-                </ul>
+                <div id="menuContainer">
+                    <label for="products" id="categoryLabel">Category:</label>
+                    <select name="products" id="products">
+                        <option value="cables">Cables</option>
+                        <option value="motors">Motors</option>
+                        <option value="conntectors">Conntectors</option>
+                        <option value="batteries">Batteries</option>
+                    </select>
+                    <a class="search">Search</a>
+                </div>
             </div>
         </div>
     </main>
